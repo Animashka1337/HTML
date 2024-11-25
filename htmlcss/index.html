@@ -1,27 +1,40 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>My web page</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <h1>
-            Objects
-        </h1>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selected Content Display</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
         <div class="container">
-            <div class="menu-items">
-                <div class="menu-item">
-                  <div class="corner-label label-chicken">Chicken</div>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-                <div class="menu-item">
-                  <div class="corner-label label-beef">Beef</div>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-                <div class="menu-item">
-                  <div class="corner-label label-sushi">Sushi</div>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
+            <div class="logo">Food, LLC</div>
+            <ul class="menu">
+                <li><button class="menu-btn" data-target="chicken">Chicken</button></li>
+                <li><button class="menu-btn" data-target="beef">Beef</button></li>
+                <li><button class="menu-btn" data-target="sushi">Sushi</button></li>
+            </ul>
         </div>
-    </body>
+    </nav>
+
+    <!-- Content Section -->
+    <section class="content">
+        <div id="chicken" class="content-item">
+            <h2>Chicken</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+        </div>
+        <div id="beef" class="content-item">
+            <h2>Beef</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+        </div>
+        <div id="sushi" class="content-item">
+            <h2>Sushi</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
 </html>
